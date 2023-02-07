@@ -1,0 +1,42 @@
+.products-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    .view-mode-switch{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // to do create variables
+        align-items: center;
+    }
+    button{
+        margin: 5px;
+        border: 1px solid #CCCCCC;
+        border-radius: 2px;
+        padding: 3px;
+    }
+    .active-option{
+        border: 2px solid rebeccapurple;
+    }
+    .sort-price{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+.products__wrapper{
+    border: 1px solid #CCCCCC;
+    max-width: 1260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}

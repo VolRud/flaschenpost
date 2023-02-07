@@ -1,0 +1,14 @@
+<div [ngClass]="{
+  product__item: true,
+  'lis-wWith-details-mode': this.viewMode.listWithDetails,
+  'list-of-photos-mode': this.viewMode.listOfPhotos
+}">
+  <div class="product__item-image">
+    <img [src]="product.image" alt="product.brandName" />
+  </div>
+  <div class="product__item-description">
+    <div class="font-bold">{{ product.brandName}}</div>
+    <div class="font-bold">{{ product.pricePerUnitText}}</div>
+    <div class="font-bold">{{ product.shortDescription}}</div>
+  </div>
+</div>
